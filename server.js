@@ -12,19 +12,22 @@ app.use(express.json())
 app.use(cors())
 
 //DB config
-const connectionurl = 'mongodb+srv://admin:eChE7edC68TXOMt2@cluster0.dxcps.mongodb.net/whatsappdb?retryWrites=true&w=majority'
+const connectionurl = {/*'mongodb+srv://admin:eChE7edC68TXOMt2@cluster0.dxcps.mongodb.net/whatsappdb?retryWrites=true&w=majority'*/}
 mongoose.connect(connectionurl, {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
 //??
+
 var pusher = new Pusher({
+    {/**
     appId: '1069694',
     key: 'd3e0c0072195dda93b55',
     secret: '65530721ad344d8d7fa8',
     cluster: 'ap4',
     encrypted: true,
+     */}
     
   });
 
